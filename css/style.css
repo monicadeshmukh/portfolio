@@ -1,9 +1,89 @@
 body {
-    background-color: navy;
+    background-color: light gray;
+	/*padding: 50px 0px 0px 0px;*/
+	z-index: 0; /*defines stacking order of the html element. higher index gets stacked on the top of lower index element. */
 }
 
 
 object {
     height: 100vh;
     width: 100vh;
+}
+
+html, body, {
+	height: 100%;
+}
+
+/* Added: Monica Deshmukh 06232020*/
+div {
+display: inline-block;
+  background-color: lightgray;
+  height:100%;
+  
+}
+
+  div div{/*div containers that are child of a div*/
+  background-color: lightblue;
+  width: 20%;
+  height:100%;
+  }
+
+.row-header{
+    margin:0px auto;
+    padding:0px;
+}
+
+.row-content {
+    margin:0px auto;
+    padding: 50px 0px 50px 0px;
+    border-bottom: 1px ridge;
+    min-height:400px;
+}
+
+.footer{
+    background-color: #D1C4E9;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+}
+
+.jumbotron {
+    padding:70px 30px 70px 30px;
+    margin:0px auto;
+    background: #9575CD ;
+    color:floralwhite;
+}
+
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
+}
+
+/* default navbar-dark class is overloaded to change the background color to a shade of purple */
+.navbar-dark {
+	background-color: #512DA8;
+}
+
+.reserveTableHeader {
+	background-color: #FFD700;
+}
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+}
+
+.info {
+	color: black;
+	font-size: 22px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.headings {
+	color: black;
+	font-size: 18px;
+	font-family: Arial, Helvetica, sans-serif;
 }
