@@ -9,7 +9,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="Github-Portfolio" content="">
 	<meta name="Monica Deshmukh" content="">
-	
+	<script type="text/javascript" src="./js/header-functions.js"></script>
+
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
@@ -20,8 +21,6 @@
 
 	<link href="https://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
 	<link href="https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-
-	<script type="text/javascript" src="./js/header-functions.js"></script>
 
 	<link href="./css/style.css" rel="stylesheet">
 	
@@ -99,25 +98,30 @@
 				    </address>
 				</div>
     			
-    			<div class="m-1 text-center">
-    				<a class="active linkclass" href="#about" onclick ="showAbout();"><span class="linkclass"> About</span></a><br><br>
-					<a class =  "linkclass" href="#training" onclick ="showTraining();"><span class="linkclass"> Training </span></a><br><br>
-					<a class =  "linkclass" href="#experience" onclick ="showExperience();"><span class="linkclass"> Experience </span></a><br><br>
-					<a  class =  "linkclass" href="#education" onclick ="showEducation();"><span class="linkclass"> Education </span></a> <br><br> 
-					<a class =  "linkclass" href="#certifications"><span class="linkclass"> Certifications </span></a><br><br>
+    			<div class="m-1 text-justify">
+    				<!--<a class="active linkclass" href="#about"><span class="linkclass"> About</span></a><br><br>
+					<a class =  "linkclass" href="#training"><span class="linkclass"> Training </span></a><br><br>
+					<a class =  "linkclass" href="#experience"><span class="linkclass"> Experience </span></a><br><br>
+					<a  class =  "linkclass" href="#education"><span class="linkclass"> Education </span></a> <br><br> 
+					<a class =  "linkclass" href="#certifications"><span class="linkclass"> Certifications </span></a><br><br>-->
+					<a class="linkclass" href="./index.html"><span class="linkclass"> About</span></a><br><br>
+					<a class =  "active linkclass" href="./training.html"><span class="linkclass"> Training </span></a><br><br>
+					<a class =  "linkclass" href="./experience.html"><span class="linkclass"> Experience </span></a><br><br>
+					<a  class =  "linkclass" href="./education.html"><span class="linkclass"> Education </span></a> <br><br> 
+					<a class =  "linkclass" href="./certifications.html"><span class="linkclass"> Certifications </span></a><br><br>
     			</div>
     			
 			</div>
 
 			<!--<div class = "col-12 col-lg-9 col-md-9 col-sm-6 bg-light" style="display: flex; flex-direction: column;">-->
 	<!-----><div id = "data" class = "col-12 col-lg-9 coll-md-9 col-sm-6 flex-container" style=" display: flex; flex-direction: column; flex-wrap: wrap; background-color: rgba(248, 244, 244, 0.993);">
-				<div id="about" class="row p-2">
-					<h3  class="linkclass m-2 p-2">CAREER PROFILE</h3>
+				<div class="row p-2" style="display: none;">
+					<h3 id="about" class="linkclass m-2 p-2">CAREER PROFILE</h3>
 					  <p id="details" class="text-justify description m-2 p-2">Highly motivated Java / Full Stack engineer with over four years of experience working as a software developer /Analyst.<br> Master's degree in Information Technology. </p>
 				</div>
 
-				<div id="skills" class="row p-2">
-					<h3 class="linkclass m-2 p-2">Skills</h3><br>
+				<div class="row p-2" style="display: none;">
+					<h3 id="skills" class="linkclass m-2 p-2">Skills</h3><br>
 					 <ul class="list-unstyled">
 						    <li><strong>Languages: </strong> Java, Javascript, c#, Python</li>
 						    <li><strong>IDE: </strong> Eclipse, Visual Studio, Dreamweaver, Android Studio</li>
@@ -129,8 +133,8 @@
 					 </ul>
 				</div>
 
-				<div id="training" class="row p-2" style="width: 100%;">
-					<p class="linkclass m-2 p-2">TRAINING</p> <br><br>
+				<div class="row p-2" style="width: 100%;">
+					<p id="training" class="linkclass m-2 p-2">TRAINING</p> <br><br>
 					<div class = "m-2 p-2" style="width: 100%;">
 					    <div class = "titles" style="display: inline-block;"> Full Stack Java Developer bootcamp PerScholas.org</div>
 					    <div class = "titles text-muted float-right" style="font-size: 14px;"> June 2020 - Present </div><br>
@@ -197,8 +201,76 @@
  					</div>
  				<!--</div>-->
 
- 				<div id="experience" class="row row-content">
-					<p class="linkclass m-2 p-2">EXPERIENCE</p> <br><br>
+ <!--				<div class="row p-2" style="width: 100%;">
+					<p id="experience" class="linkclass m-2 p-2">EXPERIENCE</p> <br><br>
+					<div class = "m-2 p-2">
+					    <div class = "titles" style="display: inline-block;">Full Stack Java Developer bootcamp PerScholas.org</div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> June 2020 - Present </div><br>
+					    <p class="description text-justify">Currently doing a rigorous hands on project based training in Java Full Stack Devlopment. Developing a banking web application. </p>
+					</div>
+
+					<div class = "m-2 p-2">
+					    <div class = "titles" style="display: inline-block;">Full-Stack Web Development specialization Coursera.org</div>
+					    <div class = "titles text-muted float-right" style="align-self: right; font-size: 14px;"> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspMarch 2020 - Present </div>
+					    <p class="description text-justify">Developing a restaurant website as part of the four-course specialization.<br> 
+					    <span style="font-style:italic;">Environment: </span> bitbucket, git, Bootstrap4, HTML, CSS, JavaScript, Sublime Text Editor</p>
+					</div>
+
+					<div class = "m-2 p-2">
+					    <div class = "titles" style="display: inline-block;">Three course specialization in Java Programming Language Coursera.org</div>
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> Jan 2016 - May 2016 </div><br>
+					    <p class="description text-justify">Developed three projects.</p>
+					    <ul class="list-unstyled">
+					    	<li><strong>Display Earthquake data on world map. </strong>
+					    		<ul>
+					    			<li>Made the map interactive. Added icons to display information like location and population when hovered over them.</li>
+					    			<li>Added function key to the map. </li>
+					    			<li>Displayed the most current earthquake data on the map. </li>
+					    		</ul>
+					    	</li>
+
+					    	<li><strong>GPS Navigation System  </strong>
+					    		<ul>
+					    			<li>Java program finds driving directions between start and end points.</li>
+					    			<li>Used different search Algorithms like BFS, Dijkstra and A*.  </li>
+					    		</ul>
+					    	</li>
+
+					    	<li><strong>Text Editor Program  </strong>
+					    		<ul>
+					    			<li>Auto generated smart text when user is typing words.</li>
+					    			<li>Autocomplete the text and did spell check.</li>
+					    		</ul>
+					    	</li>
+					    </ul>
+					    <p><span style="font-style:italic;">Environment: </span> Java 7, Eclipse</p>
+					</div>
+
+					<div class = "m-2 p-2">
+					    <div class = "titles" style="display: inline-block;">Programming Mobile Applications for Android Handheld Systems Coursera.org</div>&nbsp&nbsp
+					    <div class = "titles text-muted float-right" style="font-size: 14px;"> Sept 2015 – Dec 2015 </div><br><br>
+					    	<ul class="list-unstyled">
+					    		<li><strong>Developed Daily Selfie app. </strong>
+					    			<ul>
+					    				<li>Used smartphone camera simulator to take selfie pictures.</li>
+					    				<li>Program saves pictures and gives reminder notifications on smartphone.</li>
+					    			</ul>
+					    		</li>
+
+					    		<li><strong>Soap bubbles app.</strong>
+					    			<ul>
+					    				<li>Used smartphone camera simulator to take selfie pictures.</li>
+					    				<li>Program saves pictures and gives reminder notifications on smartphone.</li>
+					    			</ul>
+					    		</li>
+					    	</ul>
+					    	<p><span class = "text-muted" style="font-style:italic;">Environment: </span> Android Studio, Smartphone simulator	</p>
+						</div>
+ 					</div>
+ 				</div>-->
+
+ 				<div class="row row-content">
+					<p id="experience" class="linkclass m-2 p-2">EXPERIENCE</p> <br><br>
 					<div class = "m-2 p-2">
 					    <div class = "titles" style="display: inline-block;">Programmer Analyst</div>
 					    <div class = "titles text-muted float-right" style="font-size: 14px;"> 1994 - 1999 </div>
@@ -231,18 +303,12 @@
 					</div>
 				</div>
 
-				<div id="education" class="row row-content">
-					<div class="linkclass m-2 p-2" style="width: 100%">EDUCATION</div> <br><br>
+				<div class="row row-content">
+					<div id="education" class="linkclass m-2 p-2">EDUCATION</div> <br><br>
 					<div class = "m-2 p-2">
-					    <div class = "titles" style="display: inline-block;">M.S. Information Technology, University of Texas Pan American
-					    </div>
-					    <div class = "titles text-muted float-right" style="font-size: 14px; "> July 2006 - July 2008 </div>
-					    <p class="description text-justify">GPA: 4.0, Rank: 1st among 183 students of all Engineering branches at UTPA. </p>
-					<!--<div class = "m-2 p-2">
 					    <div class = "titles" style="display: inline-block;">M.S. Information Technology, University of Texas Pan American</div>
 					    <div class = "titles text-muted float-right" style="font-size: 14px;"> July 2006 - July 2008 </div><br>
 					    <p class="description text-justify">GPA: 4.0, Rank: 1st among 183 students of all Engineering branches at UTPA. </p>
-					</div>-->
 					</div>
 				</div>
 	<!-----></div>
