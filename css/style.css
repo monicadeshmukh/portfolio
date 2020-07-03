@@ -109,6 +109,14 @@ address{
     color:#0f0f0f;
 }
 
+.avatar {
+  vertical-align: middle;
+  width: 100px;
+  height: 150px;
+  border-radius: 50%;
+  align-content: center;
+}
+
 /* default navbar-dark class is overloaded to change the background color to a shade of purple */
 .navbar-dark {
 	background-color: #512DA8;
